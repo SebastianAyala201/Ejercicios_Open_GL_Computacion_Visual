@@ -1,3 +1,5 @@
+//Dibuja dos triangulos con  GL_TRIANGLE_STRIP
+
 #include <GL/glut.h>
 
 void inicio()

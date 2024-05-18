@@ -31,7 +31,7 @@ glEnd();
 // Dibujar la cadena de texto "Feliz día mamá" debajo del corazón
     glRasterPos2f(0.0, -20.0); // Posición de la cadena de texto
     glColor3f(1.0, 0.0, 1.0); // Color del texto (negro)
-    const char* texto = "Feliz dia mama alicia";
+    const char* texto = "          Feliz dia mama";
     for (int i = 0; texto[i] != '\0'; ++i) {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, texto[i]); // Renderizar cada carácter
     }

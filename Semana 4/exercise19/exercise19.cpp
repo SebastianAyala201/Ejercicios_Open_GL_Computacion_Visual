@@ -1,3 +1,5 @@
+//Dibujando 3 lineas con GL_LINES
+
 #include<GL/glut.h>
 
 void inicio()

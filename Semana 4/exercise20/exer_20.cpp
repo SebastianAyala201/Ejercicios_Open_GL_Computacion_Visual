@@ -1,3 +1,5 @@
+// Dibujando 4 lineas con GL_LINE_STRIP
+
 #include<GL/glut.h>
 
 void inicio()

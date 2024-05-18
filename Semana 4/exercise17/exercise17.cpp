@@ -1,3 +1,5 @@
+// Dibujando dos secuencias de lineas que se entrecruzan con GL_LINE_STRIP
+
 #include <GL/glut.h>
 
 void inicio()
