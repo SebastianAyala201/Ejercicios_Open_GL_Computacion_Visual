@@ -4,13 +4,13 @@
 
 void inicio(){
     glMatrixMode(GL_PROJECTION); 
-    gluOrtho2D(-60,100,-60,100); // Define una proyección ortográfica 2D
+    gluOrtho2D(-50,150,-50,150); // Define una proyección ortográfica 2D
     glClearColor(0.0, 0.0, 0.0, 1.0); // Color de fondo
 }
 
 void pantalla(){
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(1.0,0.0,1.0); //Color de la figura o línea
+    glColor3f(1.0,1.0,0.0); //Color de la figura o línea
     // Lógica de la figura
     //Las funciones glBegin y glEnd delimitan los vértices que definen un primitivo.
     glFlush(); // Asegura que las órdenes de dibujo se ejecuten
