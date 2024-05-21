@@ -6,7 +6,7 @@ void inicio()
 {
 glMatrixMode(GL_PROJECTION);
 gluOrtho2D(0, 80, 0, 80); 
-glClearColor(0.0,0.0,0.0,0.0);
+glClearColor(0.0, 0.0, 0.0, 0.0);
 }
 void pantalla()
 {
