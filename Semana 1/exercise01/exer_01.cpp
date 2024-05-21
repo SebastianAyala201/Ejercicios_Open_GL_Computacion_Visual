@@ -1,29 +1,40 @@
-// TITULO
+// Dibujando un triangulo vacio
 
 #include<GL/glut.h>
 
 void inicio(){
-    glMatrixMode(GL_PROJECTION); //Indica el tipo de proyección
-    gluOrtho2D(-60,100,-60,100); // Define una proyección ortográfica 2D
-    glClearColor(0.0, 0.0, 0.0, 1.0); // Color de fondo
+    glMatrixMode(GL_PROJECTION); 
+    gluOrtho2D(-20,120,-20,120); // Define una proyección ortográfica 2D
+    glClearColor(0.0, 0.0, 1.0, 1.0); // Fondo Azul
 }
 
 void pantalla(){
-    glClear(GL_COLOR_BUFFER_BIT);// Limpia el buffer de color usando el color especificado en glClearColor
-    glColor3f(1.0,0.0,1.0); //Color de la figura o línea
-    // Lógica de la figura
-    //Las funciones glBegin y glEnd delimitan los vértices que definen un primitivo.
+    glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(1.0,1.0,0.0); //Color de la figura o línea
+    glLineWidth(3.0);         // Establece el ancho de la línea
+    glBegin(GL_LINES);
+    glVertex2i(0,0);
+    glVertex2i(50,100);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex2i(50,100);
+    glVertex2i(100,0);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex2i(100,0);
+    glVertex2i(0,0);
+    glEnd();
     glFlush(); // Asegura que las órdenes de dibujo se ejecuten
 }
 
 int main(int argc, char *argv[]){
-    glutInit(&argc, argv); // Inicializa GLUT y procesa los argumentos de línea de comandos
-    glutInitWindowSize(680,480); // Establece el tamaño de la ventana a 680x480 píxeles
-    glutInitWindowPosition(10,10); // Establece la posición de la ventana en la pantalla
-    glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE); // Establece el modo de visualización
-    glutCreateWindow("XXXXXXXXXXX"); // Crea una ventana con el título especificado
-    inicio(); // Llama a la función de inicialización definida por el usuario
-    glutDisplayFunc(pantalla); // Establece la función de visualización
-    glutMainLoop(); // Inicia el bucle principal de eventos de GLUT
-    return EXIT_SUCCESS; // Indica que el programa ha terminado correctamente
+    glutInit(&argc, argv);
+    glutInitWindowSize(680,480); 
+    glutInitWindowPosition(10,10); 
+    glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE); 
+    glutCreateWindow("Triangulo vacio"); // Crea una ventana con el título especificado
+    inicio(); 
+    glutDisplayFunc(pantalla); 
+    glutMainLoop();
+    return EXIT_SUCCESS;
 }
