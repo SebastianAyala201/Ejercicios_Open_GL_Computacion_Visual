@@ -1,7 +1,4 @@
 //Dibujando la figura del examen parcial
-//Nombre: Sebastian Santiago
-//Apellidos: Ayala Alberca
-//Código: 22200304
 
 #include <GL/glut.h>
 #include <cmath>
