@@ -6,7 +6,7 @@
 
 void inicio(){
     glMatrixMode(GL_PROJECTION); 
-    gluOrtho2D(-50,150,-50,150); // Define una proyección ortográfica 2D
+    gluOrtho2D(-250,250,-250,250); // Define una proyección ortográfica 2D
     glClearColor(0.0, 0.0, 0.0, 1.0); // Color de fondo
 }
 
